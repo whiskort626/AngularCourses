@@ -1,0 +1,79 @@
+Herramientas necesarias:
+-Visual Studio Code
+-NodeJs
+-Angular (Esta se hara por linea de comandos)
+
+Extensiones de Visual Code
+-Angular Language Service (Angular)
+-Angular Snippets (John Papa)
+-Auto Rename Tag (Jun Han)
+-Auto Close Tag (Jun Han)
+-Materia Icon Theme (Philipp Keif)
+-
+
+Node es un ambiente de ejecucion de JavaScript que nos por ejemplo
+-Trabajar por el lado del cliente con Frontend
+-Crear aplicaciones JavaScript, Instaladores JavaScript(Angular, React)
+-Trabajar por el lado del cliente con Backend(Express)
+-Nos permite administrar paquetes a los distinto lenguajes por 
+ ejemplo en PHP(Compositor), Java(Maven, Gradle)
+
+Comprobar version de NodeJs
+Opc1: 
+node -v
+Opc2:
+node --version
+
+Comprobar el sistema de gestion de paquetes
+Opc1:
+npm -v
+
+Para instalar Angular abriremos la una Terminal de Comandos(CMD) y nos ubicaremos en la 
+ carpeta donde generaremos el proyecto y presionamos las siguientes lineas de comandos
+//Ejecutar esta linea primero en powershell para permitir la ejecucion de scripts
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned 
+//Esta linea sera para intalar Angular en nuestro ruta
+npm install -g @angular/cli
+//Verificar la versión de Angular CLI
+ng version
+ng v
+ng --version
+//Crear un nuevo proyecto Angular
+ng new nombre_del_proyecto [opciones]
+Opciones comunes
+--routing				Genera un módulo de enrutamiento (Router) en el proyecto.
+--style					Especifica el formato de hoja de estilos (por defecto es CSS). Ejemplo: --style=scss.
+--skip-git				Omite la inicialización de un repositorio Git.
+--skip-tests			Omite la generación de archivos de pruebas (spec.ts).
+--prefix				Define un prefijo personalizado para los selectores de componentes.
+--strict				Habilita el modo estricto de TypeScript y Angular.
+--package-manager		Especifica el gestor de paquetes a usar (npm, yarn, pnpm).
+//Crear un proyecto con enrutamiento y SCSS
+ng new mi-proyecto --routing --style=scss
+//Crear un proyecto sin Git y sin pruebas
+ng new mi-proyecto --skip-git --skip-tests
+//Crear un proyecto con un prefijo personalizado
+ng new mi-proyecto --prefix=app
+//Inicia el servidor de desarrollo
+ng serve
+*Abre tu navegador en http://localhost:4200 para ver la aplicación en funcionamiento
+//En Chorme se puede instalar como extencion 'Angular DevTools' para mejorar la depuracion 
+
+
+
+Comandos Extras en CMD:
+cls 								Este comando solo limpia la pantalla visible, no afecta el 
+									historial de comandos ni el contenido del archivo de salida 
+									(si estás redirigiendo la salida a un archivo).
+explorer C:\ruta\completa			Para abrir la ruta actual en el Explorador de Archivos (.) 
+mkdir nombre_de_la_carpeta  		Para crear una nueva carpeta
+mkdir Carpeta1 Carpeta2 Carpeta3	Crear varias carpetas al mismo tiempo
+mkdir CarpetaPrincipal\SubCarpeta	Crear una estructura de carpetas anidadas 
+									*Forzar la creación de carpetas (si no existe la ruta)
+									Si la ruta padre no existe, puedes usar el modificador / para 
+									crear toda la estructura
+ren nombre_actual nombre_nuevo		Para renombrar una carpeta
+									Puedes usar rename como un alias de ren
+
+
+
