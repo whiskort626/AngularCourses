@@ -1,1 +1,35 @@
-<h2>{{ title }}</h2>
+<div *ngIf="visible; else noVisible">
+    <h2>{{ title }}</h2>
+</div>
+
+<button (click)="setVisible(!visible)">
+    {{ visible ? 'Ocultar' : 'Mostrar' }} Visibilidad
+</button>
+
+<div *ngIf="visible">
+    <table *ngIf="users.length > 0 && users != undefined; else noUsers">    
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users; index as i"><!-- Tambien sirve let i = index -->
+                <td>{{ i + 1 }}</td>
+                <td>{{ user }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ng-template #noUsers>
+        <div>        
+            <p>No ahi usuarios validos.</p>
+        </div>
+    </ng-template>
+</div>
+
+
+<ng-template #noVisible>
+    <h2>Lo sentimos, no está disponible.</h2>
+</ng-template>
