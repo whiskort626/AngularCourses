@@ -59,6 +59,13 @@ ng serve
 *Abre tu navegador en http://localhost:4200 para ver la aplicación en funcionamiento
 //En Chorme se puede instalar como extencion 'Angular DevTools' para mejorar la depuracion 
 
+Las comillas simples son mejor para las cadenas string en Javascript mientas que las dobles son 
+	mejores para HTML
+Hay que tener cuidado con los modulos de agregarlos como los son el CommonModule para que se 
+	puedan usar las funciones como el *ngFor
+	<!-- Este es un comentario en HTML -->
+
+
 
 
 Comandos Extras en CMD:

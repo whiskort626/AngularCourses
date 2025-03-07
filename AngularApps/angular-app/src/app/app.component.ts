@@ -19,6 +19,7 @@ export class AppComponent {
     this.visible = visible;
     ////Con un operador ternario y no recibiendo parametro quedaria asi 
     //this.visible =  this.visible ? false : true;  
+    console.log('Hemos hecho click en setVisible');
     console.log('Visible: ', this.visible);
   }
   
