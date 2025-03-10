@@ -5,11 +5,11 @@ export class Company {
     address: string;
     phone: string;
 
-    constructor(id: number, fiscalNumber: number, name: string, address: string, phone: string) {
-        this.id = id;
-        this.fiscalNumber = fiscalNumber;
-        this.name = name;
-        this.address = address;
-        this.phone = phone;
+    constructor() {
+        this.id = 0;
+        this.fiscalNumber = 0;
+        this.name = '';
+        this.address = '';
+        this.phone = '';
     }
 }
