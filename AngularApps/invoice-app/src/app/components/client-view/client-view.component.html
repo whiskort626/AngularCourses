@@ -1,0 +1,8 @@
+<h3>Client Information</h3>
+<ul class="list-group">
+    <li class="list-group-item active">Name: {{ client.name }} {{ client.lastname }}</li>
+    <li class="list-group-item">Email: {{ client.email }}</li>
+    <li class="list-group-item">Phone: {{ client.phone }}</li>
+    <li class="list-group-item">Address: {{ client.address.street }}, {{ client.address.city }}, {{
+        client.address.country }}</li>
+</ul>

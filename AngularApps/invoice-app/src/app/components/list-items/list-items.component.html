@@ -1,0 +1,23 @@
+<h3>Detalle de la factura</h3>
+<div>
+    @if(items.length > 0) {
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (item of items; track $index) {
+                <tr row-item [item]="item"></tr>
+            }
+        </tbody>
+    </table>
+    } @else {
+        <div class="alert alert-warning">
+            <p>No items found</p>
+        </div>
+    }
+</div>
